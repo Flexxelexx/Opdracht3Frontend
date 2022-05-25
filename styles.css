@@ -1,31 +1,136 @@
-/*////////////////////////
-    Table of Contents
-    1. Global Styles
-    2. Typography
-    3. Layout
-        3.1 Reusables
-        3.2 Other
-    4. Areas
-        4.1 Header
-        4.2 Introduction
-        etc.
-    5. Media Queries
-////////////////////////*/
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Roboto:wght@100&display=swap');
 
-/* ------------------------------- 1. Global Styles -------------------------------- */
+/*Paars #5722CD;*/
+/*Blauw #4845E4;*/
+/*Roze #ED4385;*/
+/*Zwart #0C0C0C (voor standaard tekst);*/
+/*Lichtpaars #F2F0FF (voor de grote zwevende woorden, zoals "hello" en "services") Uitzonderingen:*/
+/*Lichtgrijs #F3F6F9 (voor de achtergrond van de projecten)*/
+/*Grijs #7A7A7A (voor de service-tegel tekst);*/
+/*
+ Problemen:
+ positionering algemeen / class top
 
-/* ------------------------------- 2. Typography ----------------------------------- */
 
-/* ------------------------------- 3. Layout --------------------------------------- */
+ */
 
-/* --------------- 3.1 Reusables ----------------------- */
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Roboto", sans-serif, bold;
+}
 
-/* --------------- 3.2 Other --------------------------- */
+header {
+    border-style: dotted;
+    border-color: yellow;
+    font-family: 'Merriweather', serif;
+    background: rgb(73,100,232);
+    background: linear-gradient(90deg, rgba(73,100,232,1) 0%, rgba(75,73,232,1) 41%, rgba(61,34,205,1) 100%);
+}
 
-/* ------------------------------- 4. Areas ---------------------------------------- */
+nav {
+    font-family: 'Merriweather', serif;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 15px;
+    border-style: dotted;
+    border-color: yellow;
+}
 
-/* --------------- 4.1 Header ------------------------- */
+nav ul {
+    color: white;
+    list-style: none;
+    display: flex;
+    border-style: dotted;
+    border-color: yellow;
+}
 
-/* --------------- 4.2 Introduction ------------------- */
+nav ul li {
 
-/* ------------------------------- 5. Media Queries -------------------------------- */
+    display: flex;
+    padding-right: 35px;
+    border-style: dotted;
+    border-color: yellow;
+}
+
+div.inner {
+    color: white;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    font-size: 25px;
+    border-style: dotted;
+    border-color: yellow;
+}
+
+.top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-style: dotted;
+    border-color: yellow;
+    width: 750px;
+    flex-shrink: 1;
+    flex-grow: 0;
+}
+
+
+.inner h1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-style: dotted;
+    border-color: yellow;
+}
+
+.inner h3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-style: dotted;
+    border-color: yellow;
+    padding: 50px;
+}
+.button {
+    background-color: #ED4385;
+    color: white;
+    border-style: none;
+    border-radius: 60px;
+    cursor: pointer;
+    margin: 15px;
+    padding: 25px;
+    text-align: center;
+    border-style: dotted;
+    border-color: yellow;
+}
+
+.page2 {
+    color: #5722CD;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-style: dotted;
+    border-color: yellow;
+    width: 750px;
+    flex-shrink: 1;
+    flex-grow: 0;
+}
+
+.hello {
+    color: #5722CD;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-style: dotted;
+    border-color: yellow;
+    width: 750px;
+    flex-shrink: 1;
+    flex-grow: 0;
+}
