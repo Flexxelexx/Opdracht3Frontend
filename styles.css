@@ -71,10 +71,10 @@ nav ul li {
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: 25px;
     flex-basis: 750px;
     flex-shrink: 1;
     flex-grow: 0;
+    padding-bottom: 60px;
 }
 
 .inner-container2 {
@@ -83,11 +83,12 @@ nav ul li {
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: 25px;
-    flex-basis: 1200px;
+    flex-basis: 1600px;
     flex-shrink: 1;
     flex-grow: 0;
 }
+
+
 
 .top {
     display: flex;
@@ -138,13 +139,53 @@ nav ul li {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    padding-bottom: 50px;
+}
+
+.variety {
+    color: black;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding-bottom: 50px;
+}
+
+.worth {
+    color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .worktxt {
-    margin: 25px;
+    display: flex;
+    flex-basis: 400px;
+    flex-direction: column;
+    margin-bottom: 25px;
+    padding: 70px;
 }
 
-.work img.main-images {
-    width: 50%;
+.varietytxt {
+    display: flex;
+    flex-basis: 400px;
+    flex-direction: column;
+    margin-bottom: 25px;
+    padding: 70px;
 }
 
+.worthtxt {
+    display: flex;
+    flex-basis: 400px;
+    flex-direction: column;
+    margin-bottom: 25px;
+    padding: 70px;
+}
+
+.variety, .work, .worth {
+    max-width: 1457px;
+    max-height: 547px;
+}
+
+.main-images {
+    filter: drop-shadow(10px 10px 20px grey);
+}
