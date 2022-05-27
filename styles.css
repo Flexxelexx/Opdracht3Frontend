@@ -17,15 +17,22 @@
 * {
     padding: 0;
     margin: 0;
+}
+
+body {
     font-family: "Roboto", sans-serif, bold;
 }
 
 header {
-    border-style: dotted;
-    border-color: yellow;
     font-family: 'Merriweather', serif;
     background: rgb(73,100,232);
     background: linear-gradient(90deg, rgba(73,100,232,1) 0%, rgba(75,73,232,1) 41%, rgba(61,34,205,1) 100%);
+    position: relative;
+}
+
+h1, h2, h3, h4 ,h5, h6 {
+    font-family: 'Merriweather', serif;
+    margin-bottom: 25px;
 }
 
 nav {
@@ -35,102 +42,109 @@ nav {
     flex-direction: row;
     justify-content: flex-end;
     padding: 15px;
-    border-style: dotted;
-    border-color: yellow;
+    background: rgb(73,100,232);
+    background: linear-gradient(90deg, rgba(73,100,232,1) 0%, rgba(75,73,232,1) 41%, rgba(61,34,205,1) 100%);
 }
 
 nav ul {
     color: white;
     list-style: none;
     display: flex;
-    border-style: dotted;
-    border-color: yellow;
 }
 
 nav ul li {
 
     display: flex;
     padding-right: 35px;
-    border-style: dotted;
-    border-color: yellow;
 }
 
-div.inner {
+.outer-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+
+.inner-container {
     color: white;
-    margin: 20px;
+    margin: 0 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 30px;
     font-size: 25px;
-    border-style: dotted;
-    border-color: yellow;
+    flex-basis: 750px;
+    flex-shrink: 1;
+    flex-grow: 0;
+}
+
+.inner-container2 {
+    color: white;
+    margin: 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 25px;
+    flex-basis: 1200px;
+    flex-shrink: 1;
+    flex-grow: 0;
 }
 
 .top {
     display: flex;
     flex-direction: column;
     align-items: center;
-    border-style: dotted;
-    border-color: yellow;
-    width: 750px;
-    flex-shrink: 1;
-    flex-grow: 0;
-}
-
-
-.inner h1 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     text-align: center;
-    border-style: dotted;
-    border-color: yellow;
+    padding: 60px;
 }
 
-.inner h3 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-style: dotted;
-    border-color: yellow;
-    padding: 50px;
-}
 .button {
     background-color: #ED4385;
     color: white;
     border-style: none;
     border-radius: 60px;
     cursor: pointer;
-    margin: 15px;
+    margin-bottom: 100px;
     padding: 25px;
     text-align: center;
-    border-style: dotted;
-    border-color: yellow;
+    filter: drop-shadow(6px 5px 5px black);
+    text-transform: uppercase;
 }
 
-.page2 {
+.squiggle {
+    position: absolute;
+    bottom: 0;
+}
+
+.Hello {
     color: #5722CD;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    border-style: dotted;
-    border-color: yellow;
-    width: 750px;
-    flex-shrink: 1;
-    flex-grow: 0;
+    padding: 60px;
 }
 
-.hello {
-    color: #5722CD;
+.question {
+    color: black;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     text-align: center;
-    border-style: dotted;
-    border-color: yellow;
-    width: 750px;
-    flex-shrink: 1;
-    flex-grow: 0;
+    margin: 25px;
 }
+
+.work {
+    color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.worktxt {
+    margin: 25px;
+}
+
+.work img.main-images {
+    width: 50%;
+}
+
